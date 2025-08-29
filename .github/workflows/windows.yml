@@ -89,7 +89,16 @@ jobs:
 
       - name: Test cmake
         run: make client/check CHECKARGS="--clientbin ./client/build/proxmark3"
-
+        
+      - name: Upload Windows Executable and DLLs
+        uses: actions/upload-artifact@v4
+        with:
+          name: proxmark3-windows-package
+          path: |
+            client/proxmark3.exe
+            client/*.dll
+            client/platforms/
+            client/translations/
   wsl:
     runs-on: windows-latest
     defaults:
