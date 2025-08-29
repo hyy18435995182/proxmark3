@@ -101,6 +101,8 @@ We define generic Proxmark3 platforms as following devices.
    - **Note**: unknown device hw
    - **Note**: FPGA images is building for it.  Use on your own risk.
 
+
+1
 **Unknown support status**
  - ⚠  VX
    - **Note**: unknown device hw
